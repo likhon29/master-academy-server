@@ -1,1 +1,7 @@
 /node_modules
+// app.get('/category/:categoryName', (req, res) => {
+//     const categoryName = req.params.categoryName;
+//     const categoryCourses = allCourses.filter(course => (course.category_name === categoryName));
+//     res.send(categoryCourses);
+  
+//   })
