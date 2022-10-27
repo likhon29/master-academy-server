@@ -13,7 +13,12 @@ app.get('/allCourses', (req, res) => {
   res.send(allCourses);
 })
 
-
+  app.get('/courses/:id', (req, res) => {
+    const id = req.params.id;
+    console.log(id);
+    const course = allCourses.find((course) => course.id === id);
+    res.send(course);
+  })
 
 app.listen(port, () => {
   console.log("Master academy server listening on port", port);

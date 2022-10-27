@@ -57,15 +57,9 @@
 
 
 
-app.get('/courses/category/:category', (req, res) => {
-    const category = req.params.category;
-    const categoryCourses = allCourses.filter(course => (course.category_name === category));
-    res.send(categoryCourses);
+// app.get('/courses/category/:category', (req, res) => {
+//     const category = req.params.category;
+//     const categoryCourses = allCourses.filter(course => (course.category_name === category));
+//     res.send(categoryCourses);
   
-  })
-  app.get('/courses/:id', (req, res) => {
-    const id = req.params.id;
-    console.log(id);
-    const course = allCourses.find((course) => course.id === id);
-    res.send(course);
-  })
+//   })
